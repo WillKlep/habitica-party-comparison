@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitica Party Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .user-container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 45%;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            margin: 5px;
+            padding: 10px;
+        }
+        #compare-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Habitica Party Comparison</h1>
+
+    <div class="container">
+        <div id="user-container-1" class="user-container">
+            <p>Loading user data...</p>
+        </div>
+        
+        <div id="user-container-2" class="user-container">
+            <p>Loading user data...</p>
+        </div>
+    </div>
+
+    <!-- Navigation buttons for User 1 -->
+    <div class="nav-buttons">
+        <button id="prev-button-1">Previous User 1</button>
+        <button id="next-button-1">Next User 1</button>
+    </div>
+
+    <!-- Navigation buttons for User 2 -->
+    <div class="nav-buttons">
+        <button id="prev-button-2">Previous User 2</button>
+        <button id="next-button-2">Next User 2</button>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
